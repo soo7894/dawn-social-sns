@@ -23,7 +23,9 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      # The project is maintained with pnpm, while the checked-in npm lock file
+      # predates Firebase. Install from the declared package manifest here.
+      - run: npm install --ignore-scripts
       - run: npm run build:github
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
