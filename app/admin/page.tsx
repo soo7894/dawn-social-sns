@@ -52,9 +52,9 @@ export default function AdminPage() {
   return (
     <main className="admin-shell">
       <header className="admin-header">
-        <a className="brand" href="/">dawn<span>.</span></a>
+        <a className="brand" href="?">dawn<span>.</span></a>
         <div className="admin-badge"><span>●</span> 관리자 검토 모드</div>
-        <a className="back-link" href="/">SNS로 돌아가기 →</a>
+        <a className="back-link" href="?">SNS로 돌아가기 →</a>
       </header>
 
       <section className="admin-intro">
